@@ -1,0 +1,17 @@
+C:\Users\gabri\source\repos\SlotGame\bin\Debug\net8.0-windows\SlotGame.exe
+C:\Users\gabri\source\repos\SlotGame\bin\Debug\net8.0-windows\SlotGame.deps.json
+C:\Users\gabri\source\repos\SlotGame\bin\Debug\net8.0-windows\SlotGame.runtimeconfig.json
+C:\Users\gabri\source\repos\SlotGame\bin\Debug\net8.0-windows\SlotGame.dll
+C:\Users\gabri\source\repos\SlotGame\bin\Debug\net8.0-windows\SlotGame.pdb
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.Form1.resources
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.Properties.Resources.resources
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.csproj.GenerateResource.cache
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.AssemblyInfoInputs.cache
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.AssemblyInfo.cs
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.csproj.CoreCompileInputs.cache
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.dll
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\refint\SlotGame.dll
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.pdb
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\SlotGame.genruntimeconfig.cache
+C:\Users\gabri\source\repos\SlotGame\obj\Debug\net8.0-windows\ref\SlotGame.dll
