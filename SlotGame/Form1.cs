@@ -22,7 +22,7 @@ namespace SlotGame
         }
 
         Random rnd = new Random();
-        int a, b, c, move, wins, balance, loss, tempbalance;
+        int a, b, c, d, e1, f, move, wins, balance, loss, tempbalance;
 
         void Game_Result()
         {
@@ -205,6 +205,8 @@ namespace SlotGame
                 a = rnd.Next(5);//de zero a 6
                 b = rnd.Next(5);//de zero a 6
                 c = rnd.Next(5);//de zero a 6
+                d = rnd.Next(5);//de zero a 6
+                e1 = rnd.Next(5);//de zero a 6
 
                 //total de voltas do pictureBox1 com o random = 18!
 
@@ -254,10 +256,28 @@ namespace SlotGame
                         break;
 
                 }
-                
+                switch (d)
+                {
+                    case 1:
+                    break;
+                }
+
+                switch (e1)
+                {
+                    case 1:
+                        break;
+                }
+
+                switch (f)
+                {
+                    case 1:
+                        break;
+                }
+
+
 
             }
-           
+
             else
             {
                 timer1.Enabled = false;

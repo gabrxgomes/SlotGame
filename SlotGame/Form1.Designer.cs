@@ -159,7 +159,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.Red;
+            ClientSize = new Size(800, 610);
             Controls.Add(btn_bid);
             Controls.Add(btn_play);
             Controls.Add(textBox1);
