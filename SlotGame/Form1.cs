@@ -28,9 +28,31 @@ namespace SlotGame
         {
             //if (System.Convert.ToInt32(a & b ) == c )
             //if (System.Convert.ToInt32(a & b) != c)
-            if (System.Convert.ToInt32(a == b) != c)
-                //if (System.Convert.ToInt32(a == b & a == c & b == c) == c)
-                {
+
+
+
+
+            if (a != b && a != c)
+            {
+                lbl_cassino.Text = "Try Again";
+                loss++;
+                lbl_loss.Text = "Loss : " + loss;
+
+                tempbalance = Convert.ToInt32(textBox1.Text) * balance - Convert.ToInt32(textBox1.Text);
+
+                MessageBox.Show("Conta" + tempbalance);
+                lbl_balance.Text = "Balance : $" + tempbalance;
+                textBox1.Text = "";
+                btn_play.Enabled = false;
+                pictureBox1.Image = Properties.Resources.dollar;//trocar depois por algo personalizado 
+                pictureBox2.Image = Properties.Resources.dollar;
+                pictureBox3.Image = Properties.Resources.dollar;
+
+            }
+
+            else if (System.Convert.ToInt32(a == b) != c)
+            //if (System.Convert.ToInt32(a == b & a == c & b == c) == c)
+            {
                 wins++;
                 lbl_win.Text = "Wins :" + wins;
                 balance += 2;
@@ -41,6 +63,8 @@ namespace SlotGame
 
 
             }
+
+
 
 
             else if (System.Convert.ToInt32(b == c) != a)//1
@@ -62,7 +86,7 @@ namespace SlotGame
                 btn_play.Text = "Continue Playing...";
                 lbl_cassino.Text = "You Won !!!..";
             }
-            
+
             /*if (balance >= 50) //tatica de roubar no jogo, definimos um teto para um balance saudavel mas ainda
                                 //de forma mais burra, vamos ir estudando.
             {
@@ -75,16 +99,20 @@ namespace SlotGame
                 
             }*/
 
-                    //ou
+            //ou
 
-                    /*if (wins >= 5)
-                    {
-                        pictureBox1.Image = Properties.Resources.dollar;
-                        pictureBox2.Image = Properties.Resources.dollar;
-                        pictureBox3.Image = Properties.Resources.dollar;
-                        lbl_cassino.Text = "Try Again";
+            /*if (wins >= 5)
+            {
+                pictureBox1.Image = Properties.Resources.dollar;
+                pictureBox2.Image = Properties.Resources.dollar;
+                pictureBox3.Image = Properties.Resources.dollar;
+                lbl_cassino.Text = "Try Again";
 
-                    }*/
+            }*/
+
+
+            
+
             else
             {
                 //wins--;
