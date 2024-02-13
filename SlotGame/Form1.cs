@@ -33,6 +33,19 @@ namespace SlotGame
                 lbl_balance.Text = "Saldo: $" + Convert.ToInt32(textBox1.Text) * balance;
                 btn_play.Text = "Continuar jogando...";
                 lbl_cassino.Text = "Você ganhou!!!";
+                MessageBox.Show("(a == b && b == c)");
+            }
+
+            //verifica se a == e1 && e1 == c  são iguais
+            else if (a == e1 && e1 == c )
+            {
+                wins++;
+                lbl_win.Text = "Vitórias: " + wins;
+                balance += 2;
+                lbl_balance.Text = "Saldo: $" + Convert.ToInt32(textBox1.Text) * balance;
+                btn_play.Text = "Continuar jogando...";
+                lbl_cassino.Text = "Você ganhou!!!";
+                MessageBox.Show("a == f && f == c ");
             }
             // Verifica se a e b são iguais
             else if (a == b)
