@@ -41,9 +41,15 @@
             btn_play = new Button();
             btn_bid = new Button();
             timer1 = new System.Windows.Forms.Timer(components);
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -97,7 +103,7 @@
             // lbl_win
             // 
             lbl_win.AutoSize = true;
-            lbl_win.Location = new Point(87, 318);
+            lbl_win.Location = new Point(87, 512);
             lbl_win.Name = "lbl_win";
             lbl_win.Size = new Size(56, 20);
             lbl_win.TabIndex = 5;
@@ -107,7 +113,7 @@
             // lbl_loss
             // 
             lbl_loss.AutoSize = true;
-            lbl_loss.Location = new Point(87, 356);
+            lbl_loss.Location = new Point(87, 550);
             lbl_loss.Name = "lbl_loss";
             lbl_loss.Size = new Size(52, 20);
             lbl_loss.TabIndex = 6;
@@ -116,7 +122,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(326, 318);
+            label1.Location = new Point(326, 512);
             label1.Name = "label1";
             label1.Size = new Size(85, 20);
             label1.TabIndex = 7;
@@ -125,7 +131,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(326, 353);
+            textBox1.Location = new Point(326, 547);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(162, 27);
             textBox1.TabIndex = 8;
@@ -133,7 +139,7 @@
             // 
             // btn_play
             // 
-            btn_play.Location = new Point(87, 391);
+            btn_play.Location = new Point(87, 585);
             btn_play.Name = "btn_play";
             btn_play.Size = new Size(162, 34);
             btn_play.TabIndex = 9;
@@ -143,7 +149,7 @@
             // 
             // btn_bid
             // 
-            btn_bid.Location = new Point(326, 391);
+            btn_bid.Location = new Point(326, 585);
             btn_bid.Name = "btn_bid";
             btn_bid.Size = new Size(162, 34);
             btn_bid.TabIndex = 10;
@@ -155,12 +161,45 @@
             // 
             timer1.Tick += timer1_Tick;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.Silver;
+            pictureBox4.Location = new Point(87, 322);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(162, 170);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 11;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.Silver;
+            pictureBox5.Location = new Point(326, 322);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(162, 170);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 12;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.Silver;
+            pictureBox6.Location = new Point(558, 322);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(162, 170);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 13;
+            pictureBox6.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Red;
-            ClientSize = new Size(800, 610);
+            ClientSize = new Size(800, 650);
+            Controls.Add(pictureBox6);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox4);
             Controls.Add(btn_bid);
             Controls.Add(btn_play);
             Controls.Add(textBox1);
@@ -178,6 +217,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -196,5 +238,8 @@
         private Button btn_play;
         private Button btn_bid;
         private System.Windows.Forms.Timer timer1;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
     }
 }
