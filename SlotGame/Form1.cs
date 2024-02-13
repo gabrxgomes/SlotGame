@@ -20,7 +20,7 @@ namespace SlotGame
         }
 
         Random rnd = new Random();
-        int a, b, c, move, wins, balance, loss, tempbalance;
+        int a, b, c, d, e1, f, g1, h1, i1, move, wins, balance, loss, tempbalance;
 
         void Game_Result()
         {
@@ -125,6 +125,12 @@ namespace SlotGame
                 a = rnd.Next(3) + 1; // De 1 a 3
                 b = rnd.Next(3) + 1; // De 1 a 3
                 c = rnd.Next(3) + 1; // De 1 a 3
+                d = rnd.Next(3) + 1; // De 1 a 3
+                e1 = rnd.Next(3) + 1; // De 1 a 3
+                f = rnd.Next(3) + 1; // De 1 a 3
+                g1 = rnd.Next(3) + 1; // De 1 a 3
+                h1 = rnd.Next(3) + 1; // De 1 a 3
+                i1 = rnd.Next(3) + 1; // De 1 a 3
 
                 switch (a)
                 {
@@ -162,6 +168,84 @@ namespace SlotGame
                         break;
                     case 3:
                         pictureBox3.Image = Properties.Resources.Bronze;
+                        break;
+                }
+
+                switch (d)
+                {
+                    case 1:
+                        pictureBox4.Image = Properties.Resources.Gold;
+                        break;
+                    case 2:
+                        pictureBox4.Image = Properties.Resources.Silver;
+                        break;
+                    case 3:
+                        pictureBox4.Image = Properties.Resources.Bronze;
+                        break;
+                }
+
+                switch (e1)
+                {
+                    case 1:
+                        pictureBox5.Image = Properties.Resources.Gold;
+                        break;
+                    case 2:
+                        pictureBox5.Image = Properties.Resources.Silver;
+                        break;
+                    case 3:
+                        pictureBox5.Image = Properties.Resources.Bronze;
+                        break;
+                }
+
+                switch (f)
+                {
+                    case 1:
+                        pictureBox6.Image = Properties.Resources.Gold;
+                        break;
+                    case 2:
+                        pictureBox6.Image = Properties.Resources.Silver;
+                        break;
+                    case 3:
+                        pictureBox6.Image = Properties.Resources.Bronze;
+                        break;
+                }
+
+                switch (g1)
+                {
+                    case 1:
+                        pictureBox7.Image = Properties.Resources.Gold;
+                        break;
+                    case 2:
+                        pictureBox7.Image = Properties.Resources.Silver;
+                        break;
+                    case 3:
+                        pictureBox7.Image = Properties.Resources.Bronze;
+                        break;
+                }
+
+                switch (h1)
+                {
+                    case 1:
+                        pictureBox8.Image = Properties.Resources.Gold;
+                        break;
+                    case 2:
+                        pictureBox8.Image = Properties.Resources.Silver;
+                        break;
+                    case 3:
+                        pictureBox8.Image = Properties.Resources.Bronze;
+                        break;
+                }
+
+                switch (i1)
+                {
+                    case 1:
+                        pictureBox9.Image = Properties.Resources.Gold;
+                        break;
+                    case 2:
+                        pictureBox9.Image = Properties.Resources.Silver;
+                        break;
+                    case 3:
+                        pictureBox9.Image = Properties.Resources.Bronze;
                         break;
                 }
             }
