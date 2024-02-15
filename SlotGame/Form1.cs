@@ -24,6 +24,9 @@ namespace SlotGame
 
         void Game_Result()
         {
+
+            //VERIFICAÇÃO SÓ DA FILEIRA 1 
+
             // Verifica se a, b e c são iguais
             if (a == b && b == c)
             {
@@ -36,17 +39,9 @@ namespace SlotGame
                 MessageBox.Show("(a == b && b == c)");
             }
 
-            //verifica se a == e1 && e1 == c  são iguais
-            else if (a == e1 && e1 == c )
-            {
-                wins++;
-                lbl_win.Text = "Vitórias: " + wins;
-                balance += 2;
-                lbl_balance.Text = "Saldo: $" + Convert.ToInt32(textBox1.Text) * balance;
-                btn_play.Text = "Continuar jogando...";
-                lbl_cassino.Text = "Você ganhou!!!";
-                MessageBox.Show("a == f && f == c ");
-            }
+            
+
+
             // Verifica se a e b são iguais
             else if (a == b)
             {
@@ -93,6 +88,112 @@ namespace SlotGame
                 btn_play.Enabled = false;
                 MessageBox.Show("todos diferentes");
             }
+
+
+
+
+            //FIM VERIFICAÇÃO SÓ DA FILEIRA 1 
+
+
+
+            //VERIFICAÇÃO SÓ DA FILEIRA 2
+
+            // Verifica se a, b e c são iguais
+            if (d == e1 && e1 == f)
+            {
+                wins++;
+                lbl_win.Text = "Vitórias: " + wins;
+                balance += 2;
+                lbl_balance.Text = "Saldo: $" + Convert.ToInt32(textBox1.Text) * balance;
+                btn_play.Text = "Continuar jogando...";
+                lbl_cassino.Text = "Você ganhou!!!";
+                MessageBox.Show("d == e1 && e1 == f");
+            }
+
+
+
+
+            // Verifica se a e b são iguais
+            else if (d == e1)
+            {
+                wins++;
+                lbl_win.Text = "Vitórias: " + wins;
+                balance += 2;
+                lbl_balance.Text = "Saldo: $" + Convert.ToInt32(textBox1.Text) * balance;
+                btn_play.Text = "Continuar jogando...";
+                lbl_cassino.Text = "Você ganhou!!!";
+                MessageBox.Show("d == e1");
+            }
+            // Verifica se b e c são iguais
+            else if (e1 == f)
+            {
+                wins++;
+                lbl_win.Text = "Vitórias: " + wins;
+                balance += 2;
+                lbl_balance.Text = "Saldo: $" + Convert.ToInt32(textBox1.Text) * balance;
+                btn_play.Text = "Continuar jogando...";
+                lbl_cassino.Text = "Você ganhou!!!";
+                MessageBox.Show("e1 == f");
+            }
+            // Verifica se a, b ou c são iguais
+            else if (d == e1)
+            {
+                wins++;
+                lbl_win.Text = "Vitórias: " + wins;
+                balance += 2;
+                lbl_balance.Text = "Saldo: $" + Convert.ToInt32(textBox1.Text) * balance;
+                btn_play.Text = "Continuar jogando...";
+                lbl_cassino.Text = "Você ganhou!!!";
+                MessageBox.Show("d == e1");
+            }
+            // Verifica se a, b e c são diferentes
+            else if (d != e1 && d != f && e1 != f)
+            {
+                loss++;
+                lbl_cassino.Text = "Você perdeu!!!";
+                lbl_loss.Text = "Derrotas: " + loss;
+                tempbalance = Convert.ToInt32(textBox1.Text) * balance - Convert.ToInt32(textBox1.Text);
+                MessageBox.Show("Saldo: $" + tempbalance);
+                lbl_balance.Text = "Saldo: $" + tempbalance;
+                textBox1.Text = "";
+                btn_play.Enabled = false;
+                MessageBox.Show("d != e1 && d != f && e1 != f");
+            }
+
+
+
+
+            //FIM VERIFICAÇÃO SÓ DA FILEIRA 2
+
+            //VERIFICAÇÕES ENTRE A FILEIRA 1 E FILEIRA 2
+            //verifica se a == e1 && e1 == c  são iguais (comparando a fileira 1 com a fileira 2)
+
+            else if (a == e1 && e1 == c)
+            {
+                wins++;
+                lbl_win.Text = "Vitórias: " + wins;
+                balance += 2;
+                lbl_balance.Text = "Saldo: $" + Convert.ToInt32(textBox1.Text) * balance;
+                btn_play.Text = "Continuar jogando...";
+                lbl_cassino.Text = "Você ganhou!!!";
+                MessageBox.Show("a == f && f == c ");
+            }
+
+            else if (a == e1 && e1 == c)
+            {
+                wins++;
+                lbl_win.Text = "Vitórias: " + wins;
+                balance += 2;
+                lbl_balance.Text = "Saldo: $" + Convert.ToInt32(textBox1.Text) * balance;
+                btn_play.Text = "Continuar jogando...";
+                lbl_cassino.Text = "Você ganhou!!!";
+                MessageBox.Show("a == f && f == c ");
+            }
+
+
+
+            //FIM DA VERIFICAÇÃO DA FILEIRA 1 E FILEIRA 2
+
             else
             {
                 loss++;
