@@ -21,16 +21,17 @@ namespace SlotGame
 
         Random rnd = new Random();
         int a, b, c, d, e1, f, g1, h1, i1, move, wins, balance, loss, tempbalance, comboCount;
-
         void Game_Result()
         {
+            int valorEntrada = Convert.ToInt32(textBox1.Text);
+
             if (a != b && b != c && a != c && d != e1 && e1 != f && d != f && a != e1 && e1 != c)
             {
                 comboCount = 0;
                 loss++;
                 lbl_cassino.Text = "Você perdeu!!!";
                 lbl_loss.Text = "Derrotas: " + loss;
-                tempbalance = balance - Convert.ToInt32(textBox1.Text);
+                tempbalance = balance - valorEntrada;
                 MessageBox.Show("Saldo: $" + tempbalance);
                 lbl_balance.Text = "Saldo: $" + tempbalance;
                 textBox1.Text = "";
@@ -39,18 +40,15 @@ namespace SlotGame
             }
             else
             {
-                int valorEntrada = Convert.ToInt32(textBox1.Text);
-
-                // Verificações de vitória na fileira 1
                 if (a == b && b == c)
                 {
                     comboCount++;
                     wins++;
                     lbl_win.Text = "Vitórias: " + wins;
-                    balance += valorEntrada; // Multiplica pelo valor de entrada apenas uma vez
+                    balance += valorEntrada; // Adiciona o valor de entrada ao balance ao ganhar na primeira linha
                     lbl_balance.Text = "Saldo: $" + balance;
                     btn_play.Text = "Continuar jogando...";
-                    lbl_cassino.Text = "Você ganhou!!!";
+                    lbl_cassino.Text = "Você ganhou na primeira linha!!!";
                     MessageBox.Show("(a == b && b == c)");
                 }
                 else if (a == b || b == c || a == c)
@@ -58,23 +56,22 @@ namespace SlotGame
                     comboCount++;
                     wins++;
                     lbl_win.Text = "Vitórias: " + wins;
-                    balance += valorEntrada; // Multiplica pelo valor de entrada apenas uma vez
+                    balance += valorEntrada; // Adiciona o valor de entrada ao balance ao ganhar na primeira linha
                     lbl_balance.Text = "Saldo: $" + balance;
                     btn_play.Text = "Continuar jogando...";
-                    lbl_cassino.Text = "Você ganhou!!!";
+                    lbl_cassino.Text = "Você ganhou na primeira linha!!!";
                     MessageBox.Show("Combinação na fileira 1");
                 }
 
-                // Verificações de vitória na fileira 2
                 if (d == e1 && e1 == f)
                 {
                     comboCount++;
                     wins++;
                     lbl_win.Text = "Vitórias: " + wins;
-                    balance += valorEntrada; // Multiplica pelo valor de entrada apenas uma vez
+                    balance += valorEntrada; // Adiciona o valor de entrada ao balance ao ganhar na segunda linha
                     lbl_balance.Text = "Saldo: $" + balance;
                     btn_play.Text = "Continuar jogando...";
-                    lbl_cassino.Text = "Você ganhou!!!";
+                    lbl_cassino.Text = "Você ganhou na segunda linha!!!";
                     MessageBox.Show("d == e1 && e1 == f");
                 }
                 else if (d == e1 || e1 == f || d == f)
@@ -82,23 +79,22 @@ namespace SlotGame
                     comboCount++;
                     wins++;
                     lbl_win.Text = "Vitórias: " + wins;
-                    balance += valorEntrada; // Multiplica pelo valor de entrada apenas uma vez
+                    balance += valorEntrada; // Adiciona o valor de entrada ao balance ao ganhar na segunda linha
                     lbl_balance.Text = "Saldo: $" + balance;
                     btn_play.Text = "Continuar jogando...";
-                    lbl_cassino.Text = "Você ganhou!!!";
+                    lbl_cassino.Text = "Você ganhou na segunda linha!!!";
                     MessageBox.Show("Combinação na fileira 2");
                 }
 
-                // Verificações de vitória na fileira 3
                 if (g1 == h1 && h1 == i1)
                 {
                     comboCount++;
                     wins++;
                     lbl_win.Text = "Vitórias: " + wins;
-                    balance += valorEntrada; // Multiplica pelo valor de entrada apenas uma vez
+                    balance += valorEntrada; // Adiciona o valor de entrada ao balance ao ganhar na terceira linha
                     lbl_balance.Text = "Saldo: $" + balance;
                     btn_play.Text = "Continuar jogando...";
-                    lbl_cassino.Text = "Você ganhou!!!";
+                    lbl_cassino.Text = "Você ganhou na terceira linha!!!";
                     MessageBox.Show("g1 == h1 && h1 == i1");
                 }
                 else if (g1 == h1 || h1 == i1 || g1 == i1)
@@ -106,27 +102,24 @@ namespace SlotGame
                     comboCount++;
                     wins++;
                     lbl_win.Text = "Vitórias: " + wins;
-                    balance += valorEntrada; // Multiplica pelo valor de entrada apenas uma vez
+                    balance += valorEntrada; // Adiciona o valor de entrada ao balance ao ganhar na terceira linha
                     lbl_balance.Text = "Saldo: $" + balance;
                     btn_play.Text = "Continuar jogando...";
-                    lbl_cassino.Text = "Você ganhou!!!";
+                    lbl_cassino.Text = "Você ganhou na terceira linha!!!";
                     MessageBox.Show("Combinação na fileira 3");
                 }
 
-                // Verificações de combinação entre todas as fileiras
                 if ((a == d && d == g1) || (b == e1 && e1 == h1) || (c == f && f == i1) || (e1 == h1 && h1 == i1))
                 {
                     comboCount++;
                     wins++;
                     lbl_win.Text = "Vitórias: " + wins;
-                    balance += valorEntrada; // Multiplica pelo valor de entrada apenas uma vez
+                    balance += valorEntrada; // Adiciona o valor de entrada ao balance ao ganhar em todas as linhas
                     lbl_balance.Text = "Saldo: $" + balance;
                     btn_play.Text = "Continuar jogando...";
-                    lbl_cassino.Text = "Você ganhou!!!";
+                    lbl_cassino.Text = "Você ganhou em todas as linhas!!!";
                     MessageBox.Show("Combinação entre todas as fileiras");
                 }
-
-                
             }
         }
 
