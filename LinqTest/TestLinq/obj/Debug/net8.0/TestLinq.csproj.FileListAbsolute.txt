@@ -1,0 +1,14 @@
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\bin\Debug\net8.0\TestLinq.exe
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\bin\Debug\net8.0\TestLinq.deps.json
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\bin\Debug\net8.0\TestLinq.runtimeconfig.json
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\bin\Debug\net8.0\TestLinq.dll
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\bin\Debug\net8.0\TestLinq.pdb
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\obj\Debug\net8.0\TestLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\obj\Debug\net8.0\TestLinq.AssemblyInfoInputs.cache
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\obj\Debug\net8.0\TestLinq.AssemblyInfo.cs
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\obj\Debug\net8.0\TestLinq.csproj.CoreCompileInputs.cache
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\obj\Debug\net8.0\TestLinq.dll
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\obj\Debug\net8.0\refint\TestLinq.dll
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\obj\Debug\net8.0\TestLinq.pdb
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\obj\Debug\net8.0\TestLinq.genruntimeconfig.cache
+C:\Users\gabri\Desktop\DOTNETAPPS\LinqTest\TestLinq\obj\Debug\net8.0\ref\TestLinq.dll
